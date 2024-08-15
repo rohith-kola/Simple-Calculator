@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+</head>
+<body>
+    <div id="container">
+        <div id="inside">
+            <div id="textbox">
+                <span id="text"></span>
+            </div>
+            <div id="panel">
+
+                
+                <div id="firstline">
+                    <input type="button" value="+" id="+" onclick="onOperator('+')" />
+                    <input type="button" value="-" id="-" onclick="onOperator('-')"/>
+                    <input type="button" value="X" id="X" onclick="onOperator('*')"/>
+                    <input type="button" id="/" value="/" onclick="onOperator('/')" />
+                    <br>
+                </div>
+
+                <div id="sub-panel">
+                    <div id="sub-panel-left">
+                        <div id="secondline">
+                            <input type="button" value="7" id="7" onclick="onNumber('7')" />
+                            <input type="button" value="8" id="8" onclick="onNumber('8')" />
+                            <input type="button" value="9" id="9" onclick="onNumber('9')" />
+                            <br>
+                        </div>
+
+                        <div id="thirdline">
+                            <input type="button" value="4" id="4" onclick="onNumber('4')" />
+                            <input type="button" value="5" id="5" onclick="onNumber('5')" />
+                            <input type="button" value="6" id="6" onclick="onNumber('6')" />
+                            <br>
+                        </div>
+
+                        <div id="fourthline">
+                            <input type="button" value="1" id="1" onclick="onNumber('1')" />
+                            <input type="button" value="2" id="2" onclick="onNumber('2')" />
+                            <input type="button" value="3" id="3" onclick="onNumber('3')" />
+                            <br>
+                        </div>
+
+                        <div id="fifthline">
+                            <input type="button" value="0" id="0" onclick="onNumber('0')" />
+                            <input type="button" value="." id="." onclick="onDot()" />
+                            <input type="button" value="C" id="C" onclick="onClear()" />
+                            <br>
+                        </div>
+                    </div>
+                    
+                    <div id="sub-panel-right">
+                        <input type="button" id="eq" value="=" onclick="oneq()"/>
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
